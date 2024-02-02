@@ -1,0 +1,19 @@
+<form class="example-form" (submit)="sendMessage()">
+    <div class="flex column">
+        <mat-form-field class="example-full-width">
+            <mat-label>Escreva uma mensagem</mat-label>
+            <textarea [formControl]="message" matInput placeholder="Escreva algo aqui.."></textarea>
+        </mat-form-field>
+        <button mat-raised-button>Enviar</button>
+    </div>
+</form>
+
+<div class="messages">
+    @for (m of messages; track m.message) {
+    <mat-card>
+        <mat-card-content>{{m.message}}</mat-card-content>
+    </mat-card>
+    } @empty {
+    Nenhuma mensagem enviada!
+    }
+</div>

@@ -1,0 +1,68 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 64px 1fr 48px;
+    height: 100%;
+}
+
+section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & .footer {
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.h-100 {
+    height: 100%;
+}
+
+/* FLEX */
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
